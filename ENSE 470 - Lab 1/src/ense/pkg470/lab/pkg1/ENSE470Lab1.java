@@ -10,15 +10,13 @@ import java.util.*;
  *
  * @author Dolan
  */
-public class ENSE470Lab1 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) 
+public class ENSE470Lab1 
+{
+    public static void main(String args) 
     {
-        // TODO code application logic here
-        // Create a customer;
+        PersonalCustomer a = new PersonalCustomer("Clay", "HotTown", 9000);
+        PersonalCustomer b = new PersonalCustomer("Colin", "GayTown", 9001);
+        CorporateCustomer c = new CorporateCustomer()
         
     }
     

@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package ense.pkg470.lab.pkg1;
 /**
  *
  * @author Dolan
  */
 public class Product 
 {
-    String name;
-    double itemCost;
+    private String name;
+    private double itemCost;
     
     Product()
     {
@@ -23,4 +23,13 @@ public class Product
         this.name = inName;
         this.itemCost = inItemCost;
     }
+    public String getName()
+    {
+        return this.name;
+    }
+    public double getItemCost()
+    {
+        return this.itemCost;
+    }
+            
 }

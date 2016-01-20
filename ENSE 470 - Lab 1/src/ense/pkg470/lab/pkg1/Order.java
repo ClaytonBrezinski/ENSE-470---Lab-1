@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ense.pkg470.lab.pkg1;
 import java.util.*;
 /**
  *
@@ -10,11 +11,11 @@ import java.util.*;
  */
 public class Order 
 {
-    String dateReceived;
-    Boolean isPrepaid;
-    String orderNumber; 
-    Double totalCost;
-    List<OrderLine> orderItems = new ArrayList<OrderLine>();
+    private String dateReceived;
+    private Boolean isPrepaid;
+    private String orderNumber; 
+    private Double totalCost;
+    private List<OrderLine> orderItems = new ArrayList<OrderLine>();
     
     Order()
     {
@@ -32,7 +33,7 @@ public class Order
         // totalCost = sum of each orderItem's total cost
         for (int i = 0; i < orderItems.size(); i++)
         {
-            this.totalCost += orderItems.get(i).totalCost;
+            this.totalCost += orderItems.get(i).getTotalCost();
         }
     }
     void dispatch()

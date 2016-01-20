@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ense.pkg470.lab.pkg1;
 
 /**
  *
  * @author Dolan
  */
-public interface Customer
+public interface Customer 
 {
-    String getCreditRating();
-    
+    public String getCreditRating();
 }

@@ -3,16 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package ense.pkg470.lab.pkg1;
 /**
  *
  * @author Dolan
  */
 public class OrderLine
 {
-    double totalCost;
-    int quantity;
-    Product item;
+    private double totalCost;
+    private int quantity;
+    private Product item;
     
     OrderLine()
     {
@@ -22,8 +22,12 @@ public class OrderLine
     }
     OrderLine(int inQuantity, Product inItem)
     {
-        this.totalCost = inItem.itemCost * quantity;
+        this.totalCost = inItem.getItemCost() * quantity;
         this.quantity = inQuantity; 
         this.item = inItem;
+    }
+    public double getTotalCost()
+    {
+        return this.totalCost;
     }
 }
