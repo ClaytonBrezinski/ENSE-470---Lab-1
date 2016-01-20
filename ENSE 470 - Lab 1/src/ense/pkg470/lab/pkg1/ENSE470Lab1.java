@@ -16,7 +16,11 @@ public class ENSE470Lab1
     {
         PersonalCustomer a = new PersonalCustomer("Clay", "HotTown", 9000);
         PersonalCustomer b = new PersonalCustomer("Colin", "GayTown", 9001);
-        CorporateCustomer c = new CorporateCustomer()
+        Product A1 = new Product("Pencil", 5);
+        Product A2 = new Product("Lined Paper", 2);
+        Product A3 = new Product("Grid Paper", 3);        
+        CorporateCustomer c = new CorporateCustomer("Chow", "WorkTown", 12, 0);
+        c.addOrder(Order());
         
     }
     

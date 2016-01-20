@@ -28,16 +28,4 @@ public class PersonalCustomer extends BusinessCustomer
         this.address = inAddress;
         this.creditRating = inCreditRating;
     }
-    public String getCreditRating()
-    {
-        return Integer.toString(this.creditRating);
-    }
-    public String getName()
-    {
-        return this.name;
-    }
-    public String getAddress()
-    {
-        return this.address;
-    }
 };

@@ -11,5 +11,5 @@ package ense.pkg470.lab.pkg1;
  */
 public interface Customer 
 {
-    public String getCreditRating();
+    public int getCreditRating();
 }

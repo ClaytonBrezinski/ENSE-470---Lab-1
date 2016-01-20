@@ -4,39 +4,55 @@
  * and open the template in the editor.
  */
 package ense.pkg470.lab.pkg1;
+import java.util.*;
 /**
  *
  * @author Dolan
  */
 public class CorporateCustomer extends BusinessCustomer 
-{
-    private String contactName; 
-    private double bill;
+{ 
+    private double currentBill;
+    private String emailAddress;
     
     public CorporateCustomer()
     {
-        this.contactName = "";
-        this.bill = 0.0;
+        this.name = "";
+        this.address = "";
+        this.creditRating = 0;
+        this.Orders = null;
+        this.currentBill = 0.0;
+        emailAddress = "";
     }
-    public CorporateCustomer(String inName, double inBill)
+    public CorporateCustomer(String inName,String inAddress, int inCreditRating,List<Order> inOrders, double inBill)
     {
-        this.contactName = inName;
-        this.bill = inBill;
+        this.name = inName;
+        this.address = inAddress;
+        this.creditRating = inCreditRating;
+        this.Orders = inOrders;
+        this.currentBill = inBill;
     }
-    public String getCreditRating()
+    public CorporateCustomer(String inName,String inAddress, int inCreditRating, double inBill)
     {
-        return "hi";
+        this.name = inName;
+        this.address = inAddress;
+        this.creditRating = inCreditRating;
+        this.currentBill = inBill;
     }
-    public String getName()
+    public String getContactName()
     {
-        return this.contactName;
-    }
-    public String getAddress()
-    {
-        return this.address;
+        return this.name;
     }
     public double getBill()
     {
-        return this.bill;
+        return this.currentBill;
+    }
+    public double BillForMonth()
+    {
+        // I am assuming this will return the total bill that the corporate employee will receive at the end of the month
+        return getBill();
+    }
+    public void remind()
+    {
+        // email the individual with what their current bill for the month is.
     }
 }
