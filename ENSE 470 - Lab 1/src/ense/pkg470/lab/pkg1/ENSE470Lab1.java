@@ -12,7 +12,7 @@ import java.util.*;
  */
 public class ENSE470Lab1 
 {
-    public static void main(String args) 
+    public static void main(String[] args[]) 
     {
         PersonalCustomer a = new PersonalCustomer("Clay", "HotTown", 9000);
         PersonalCustomer b = new PersonalCustomer("Colin", "GayTown", 9001);
