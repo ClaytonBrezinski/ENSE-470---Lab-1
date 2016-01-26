@@ -16,11 +16,17 @@ public class ENSE470Lab1
     {
         PersonalCustomer a = new PersonalCustomer("Clay", "HotTown", 9000);
         PersonalCustomer b = new PersonalCustomer("Colin", "GayTown", 9001);
-        Product A1 = new Product("Pencil", 5);
-        Product A2 = new Product("Lined Paper", 2);
-        Product A3 = new Product("Grid Paper", 3);        
+        Product A1 = new Product("Pencil", 5.00);
+        Product A2 = new Product("Lined Paper", 2.25);
+        Product A3 = new Product("Grid Paper", 3.25);  
+        OrderLine B1 = new OrderLine(1, A1);
+        //B1.add(new OrderLine(1, A2));
+        //B1.add(new OrderLine(2, A3));
+        
         CorporateCustomer c = new CorporateCustomer("Chow", "WorkTown", 12, 0);
-        c.addOrder(Order());
+        c.addOrderLine(B1);
+        c.getOrderTotalCost();
+        
         
     }
     

@@ -30,4 +30,9 @@ public class OrderLine
     {
         return this.totalCost;
     }
+    public void printOrderLine()
+    {
+        int SPACER = 5;
+        System.out.format("%-10s:%10s:%5s\n", this.item.getName(), this.item.getItemCost(), this.quantity);    
+    }
 }

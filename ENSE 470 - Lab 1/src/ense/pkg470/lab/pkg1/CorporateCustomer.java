@@ -19,16 +19,16 @@ public class CorporateCustomer extends BusinessCustomer
         this.name = "";
         this.address = "";
         this.creditRating = 0;
-        this.Orders = null;
+        this.order = null;
         this.currentBill = 0.0;
         emailAddress = "";
     }
-    public CorporateCustomer(String inName,String inAddress, int inCreditRating,List<Order> inOrders, double inBill)
+    public CorporateCustomer(String inName,String inAddress, int inCreditRating, Order inOrder, double inBill)
     {
         this.name = inName;
         this.address = inAddress;
         this.creditRating = inCreditRating;
-        this.Orders = inOrders;
+        this.order = inOrder;
         this.currentBill = inBill;
     }
     public CorporateCustomer(String inName,String inAddress, int inCreditRating, double inBill)

@@ -14,7 +14,7 @@ public class BusinessCustomer
     String name;
     String address;
     int creditRating; 
-    List<Order> Orders =  new ArrayList<Order>();
+    Order order= new Order();
     
     
     public String getName()
@@ -29,12 +29,16 @@ public class BusinessCustomer
     {
         return this.creditRating;
     }
-    public List<Order> getOrderList()
+    public Order getOrder()
     {
-        return this.Orders;
+        return this.order;
     }
-    public void addOrder(Order inOrder)
+    public void addOrderLine(OrderLine inOrderLine)
     {
-        Orders.add(inOrder);
+        this.order.addOrderLine(inOrderLine);
+    }
+    public double getOrderTotalCost()
+    {
+        return this.order.getTotalCost();
     }
 }

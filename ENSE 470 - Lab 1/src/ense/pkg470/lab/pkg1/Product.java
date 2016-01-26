@@ -30,6 +30,5 @@ public class Product
     public double getItemCost()
     {
         return this.itemCost;
-    }
-            
+    }            
 }
