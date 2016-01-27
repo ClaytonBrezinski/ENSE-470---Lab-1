@@ -11,17 +11,13 @@ package ense.pkg470.lab.pkg1;
 public class PersonalCustomer extends BusinessCustomer
 {
    
-    /*
-    Purpose:
-    Input: 
-    Output: 
-    */
     public PersonalCustomer()
     {
         this.name = "";
         this.address = "";
         this.creditRating = 0;
-    }   
+    }  
+    
     public PersonalCustomer(String inName, String inAddress, int inCreditRating)
     {
         this.name = inName;

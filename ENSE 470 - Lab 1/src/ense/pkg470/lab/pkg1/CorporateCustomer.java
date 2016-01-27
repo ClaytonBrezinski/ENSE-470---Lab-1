@@ -14,6 +14,7 @@ public class CorporateCustomer extends BusinessCustomer
     private double currentBill;
     private String emailAddress;
     
+    
     public CorporateCustomer()
     {
         this.name = "";
@@ -23,7 +24,8 @@ public class CorporateCustomer extends BusinessCustomer
         this.currentBill = 0.0;
         emailAddress = "";
     }
-    public CorporateCustomer(String inName,String inAddress, int inCreditRating, Order inOrder, double inBill)
+    
+    public CorporateCustomer(String inName, String inAddress, int inCreditRating, Order inOrder, double inBill)
     {
         this.name = inName;
         this.address = inAddress;
@@ -31,26 +33,51 @@ public class CorporateCustomer extends BusinessCustomer
         this.order = inOrder;
         this.currentBill = inBill;
     }
-    public CorporateCustomer(String inName,String inAddress, int inCreditRating, double inBill)
+    
+    public CorporateCustomer(String inName, String inAddress, int inCreditRating, double inBill)
     {
         this.name = inName;
         this.address = inAddress;
         this.creditRating = inCreditRating;
         this.currentBill = inBill;
     }
+    
+    /*
+    Purpose: Return the contact name of the customer
+    Input: none
+    Output: String - the name of the Corporate custoimer
+    */
     public String getContactName()
     {
         return this.name;
     }
+    
+    /*
+    Purpose: get the total cost of the items in the cart
+    Input: none
+    Output: double - the total cost of the cart 
+    */
     public double getBill()
     {
         return this.currentBill;
     }
-    public double BillForMonth()
+    
+    /*
+    Purpose: 
+    Input: 
+    Output:
+    */
+    public double billForMonth()
     {
         // I am assuming this will return the total bill that the corporate employee will receive at the end of the month
         return getBill();
     }
+    
+    /*
+    Purpose: placeholder for emailing the customer using their built in email address
+    Input: none
+    Output: email sent
+    */
     public void remind()
     {
         // email the individual with what their current bill for the month is.

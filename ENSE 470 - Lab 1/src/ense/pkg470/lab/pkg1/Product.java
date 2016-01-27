@@ -23,10 +23,22 @@ public class Product
         this.name = inName;
         this.itemCost = inItemCost;
     }
+    
+    /*
+    Purpose: getter for name 
+    Input: none
+    Output: String - name of the object
+    */
     public String getName()
     {
         return this.name;
     }
+    
+    /*
+    Purpose: getter for item cost
+    Input: none
+    Output: double - cost of 1 item
+    */
     public double getItemCost()
     {
         return this.itemCost;
